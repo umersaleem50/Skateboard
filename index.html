@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Skateboard | learn to do skateboard tricks</title>
+    <link rel="stylesheet" href="./vendors/fonts/customFont.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <input type="checkbox" name="resmenu" id="resmenu" class="resmenu__checkbox">
+      <div class="resmenu">
+        <label for="resmenu" class="resmenu__icon">&mdash;</label>
+      </div>
+      <div class="logo">skateboard</div>
+
+      <div class="topbar">
+        <div class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search"
+            id="search"
+          />
+          <svg class="search__logo">
+            <use xlink:href="./vendors/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </div>
+
+        <div class="profile">
+          <img
+            src="./vendors/imgs/profile-main.jpg"
+            alt="Profile Photo"
+            class="profile__img"
+          />
+          <div class="profile__name">Thomas</div>
+          <svg class="profile__setting">
+            <use
+              xlink:href="./vendors/sprite.svg#icon-keyboard_arrow_down"
+            ></use>
+          </svg>
+
+          <svg class="profile__notification">
+            <use xlink:href="./vendors/sprite.svg#icon-bell"></use>
+          </svg>
+        </div>
+      </div>
+
+      <!--✔ LEFTBAR = STARTS FROM HERE -->
+
+      <div class="leftbar">
+        <div class="menu">
+          <!-- delete this
+          <div class="leftbar__search search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search"
+              id="search"
+            />
+            <svg class="search__logo">
+              <use xlink:href="./vendors/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </div> -->
+          <p class="menu__heading">menu</p>
+          <nav class="menu__navi">
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box menu__checked">
+                  <svg class="menu__link--logo menu__checked--logo">
+                    <use xlink:href="./vendors/sprite.svg#icon-home"></use>
+                  </svg>
+                </div>
+                <p class="menu__link--name">Discover</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-trending_up"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Trending</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-cloud_download"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Streaming</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-file_present"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Playlist</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use xlink:href="./vendors/sprite.svg#icon-bookmark"></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Bookmark</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="menu u-margin-top-medium">
+          <p class="menu__heading">Category</p>
+          <nav class="menu__navi">
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use xlink:href="./vendors/sprite.svg#icon-home"></use>
+                  </svg>
+                </div>
+                <p class="menu__link--name">Live Stream</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-trending_up"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Tutorial</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-cloud_download"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Competition</p>
+              </a>
+            </ul>
+
+            <ul class="menu__item">
+              <a href="#" class="menu__link">
+                <div class="menu__logo-box">
+                  <svg class="menu__link--logo">
+                    <use
+                      xlink:href="./vendors/sprite.svg#icon-file_present"
+                    ></use>
+                  </svg>
+                </div>
+
+                <p class="menu__link--name">Community</p>
+              </a>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="theme-switch">
+          <!-- <div class="switch">
+            <input
+              type="checkbox"
+              name="button"
+              id="button"
+              class="switch__check"
+            />
+            <div class="switch__button"></div>
+          </div> -->
+          <label class="mode-text" for="button">
+            <span>
+              <div class="switch" id="btnSwitch">
+                <input
+                  type="checkbox"
+                  name="button"
+                  id="button"
+                  class="switch__check"
+                />
+                <div class="switch__button"></div>
+              </div>
+            </span>
+            Night mode</label
+          >
+        </div>
+      </div>
+
+      <!--RIGHT CONTENT = STARTS HERE -->
+
+      <div class="detail">
+        <div class="content">
+          <p class="content__heading">Discover</p>
+          <div class="box">
+            <div class="tab">
+              <div class="tab__box">
+                <h2 class="heading__hero tab__heading">
+                  How to do Basic Jumping and how to landing safely
+                </h2>
+
+                <div class="profile-hero">
+                  <img
+                    src="./vendors/imgs/profile1.jpg"
+                    alt="Profile Photo 1"
+                    class="profile-hero__img"
+                  />
+                  <div class="profile-hero__name">
+                    Thomas Hope
+                    <div class="profile-hero__views">
+                      53k views
+                      <span>2 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./vendors/imgs/hero1.jpg"
+                alt="Hero image 1"
+                class="tab__img"
+              />
+            </div>
+            <div class="tab tab--2">
+              <div class="tab__box tab__box--2">
+                <h2 class="heading__hero tab__heading tab__heading--2">
+                  Skateboard Tips You need to know
+                </h2>
+                <!-- PROFILE BOX IN HERO SECTIONS -->
+                <div class="profile-hero profile-hero--2">
+                  <img
+                    src="./vendors/imgs/profile2.jpg"
+                    alt="Profile Photo 1"
+                    class="profile-hero__img"
+                  />
+                  <div class="profile-hero__name">
+                    Thomas Hope
+                    <div class="profile-hero__views">
+                      53k views
+                      <span class="profile-hero__views__time">2 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./vendors/imgs/hero2.jpg"
+                alt="Hero image 2"
+                class="tab__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- MOST WATCHED VIDEOS -->
+        <div class="content">
+          <p class="content__heading">Most Watched</p>
+          <div class="recommended-videos">
+            <!-- VIDEO ELEMENT START -->
+            <div class="video">
+              <img
+                src="./vendors/imgs/tab1.jpg"
+                alt="Vedio 1 Thumbnail"
+                class="video__img"
+              />
+              <div class="video__details">
+                <img
+                  src="./vendors/imgs/profile3.jpg"
+                  alt="User Photo 1"
+                  class="author__photo"
+                />
+                <p class="author__name">Andy William</p>
+                <h4 class="video__title">
+                  Basic how to ride your skateboard comfortly
+                </h4>
+                <div class="video__views">
+                  <span>53k views • 2 weeks agos</span>
+                </div>
+              </div>
+            </div>
+            <!-- VIDEO ELEMENT ENDS -->
+
+            <!-- VIDEO ELEMENT START -->
+            <div class="video">
+              <img
+                src="./vendors/imgs/tab2.jpg"
+                alt="Vedio 2 Thumbnail"
+                class="video__img"
+              />
+              <div class="video__details">
+                <img
+                  src="./vendors/imgs/profile4.jpg"
+                  alt="User Photo 2"
+                  class="author__photo"
+                />
+                <p class="author__name">Johny Wise</p>
+                <h4 class="video__title">
+                  Prepare for your first skateboard jump
+                </h4>
+                <div class="video__views">
+                  <span>53k views • 2 weeks agos</span>
+                </div>
+              </div>
+            </div>
+            <!-- VIDEO ELEMENT ENDS -->
+
+            <!-- VIDEO ELEMENT START -->
+            <div class="video">
+              <img
+                src="./vendors/imgs/tab3.jpg"
+                alt="Vedio 3 Thumbnail"
+                class="video__img"
+              />
+              <div class="video__details">
+                <img
+                  src="./vendors/imgs/profile5.jpg"
+                  alt="User Photo 3"
+                  class="author__photo"
+                />
+                <p class="author__name">Budi Hakim</p>
+                <h4 class="video__title">
+                  Tips to playing skateboard on the ramp
+                </h4>
+                <div class="video__views">
+                  <span>53k views • 2 weeks agos</span>
+                </div>
+              </div>
+            </div>
+            <!-- VIDEO ELEMENT ENDS -->
+
+            <!-- VIDEO ELEMENT START -->
+            <div class="video">
+              <img
+                src="./vendors/imgs/tab4.jpg"
+                alt="Vedio 4 Thumbnail"
+                class="video__img"
+              />
+              <div class="video__details">
+                <img
+                  src="./vendors/imgs/profile6.jpg"
+                  alt="User Photo 4"
+                  class="author__photo"
+                />
+                <p class="author__name">Wijaya Abodi</p>
+                <h4 class="video__title">
+                  Basic equipment to play skateboard safely
+                </h4>
+                <div class="video__views">
+                  <span>53k views • 2 weeks agos</span>
+                </div>
+              </div>
+            </div>
+            <!-- VIDEO ELEMENT ENDS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- MENU WILL BE HERE -->
+      
+      <div class="resmenu">
+        
+          
+      
+      </div>
+    </div>
+  </body>
+  <script src="myScript.js"></script>
+</html>

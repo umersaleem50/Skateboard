@@ -1,0 +1,15 @@
+.recommended-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 20rem));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  // grid-column: ;
+  @media only screen and (max-width: $bp-small){
+    grid-gap: 2rem;
+    grid-row-gap: 3rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 60rem));
+    grid-auto-rows: 20rem;
+    justify-content: center;
+  }
+}

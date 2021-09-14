@@ -1,0 +1,49 @@
+.profile {
+  display: grid;
+  grid-template-columns: repeat(2, min-content) 1fr min-content;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-small){
+    display: none;
+  }
+
+  & > * {
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $color-white;
+    font-size: 1.2rem;
+  }
+
+  &__setting {
+    margin-right: 3rem;
+  }
+
+  &__notification {
+    margin-right: 0;
+  }
+
+  &__notification::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: orangered;
+    top: 0;
+    right: 0;
+  }
+
+  &__setting,
+  &__notification {
+    position: relative;
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: $color-gray-light;
+  }
+}

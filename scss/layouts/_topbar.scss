@@ -1,0 +1,11 @@
+.topbar {
+  display: grid;
+  align-items: center;
+  grid-template-columns: [search-start] minmax(min-content, 2fr) [search-end profile-start] max-content [profile-end];
+  grid-column: menu-end / full-end;
+  grid-row: 1 / 2;
+  padding: 2rem 0;
+
+
+ 
+}

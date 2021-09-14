@@ -1,0 +1,77 @@
+.resmenu{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    
+    @media only screen and (max-width:$bp-small){
+        
+        opacity: 1;    
+        display: inline-block;
+        width: 5rem;
+        height: 1rem;
+        z-index: 200;
+
+        
+        &__icon{
+            // display: none;
+            font-size: 5rem;
+            width: 2rem;
+            // height: 2rem;
+            top: -1rem;
+            right: 3rem;
+            color: $color-gray-light;
+            position: absolute;
+            z-index: 300;
+            cursor: pointer;
+            // text-align: ;
+
+            &::before, &::after{
+                content: '\2014';
+                position: absolute;
+            }
+            &::before{
+                transform: translateY(1rem);
+            }
+            &::after{
+                transform: translateY(-4rem);
+            }
+
+            @media only screen and (max-width: $bp-small){
+                font-size: 4rem;
+
+            }
+            @media only screen and (max-width: $bp-smallest){
+                font-size: 4rem;
+                top: 0;
+                right: 1rem;
+            }
+        }
+        
+
+        &__checkbox:checked ~ .leftbar{
+            display: grid;
+            grid-column: 1 / -1;
+            grid-row: 2 / span 1;
+            opacity: 1;
+        }
+
+        
+
+    }
+
+}
+// .resmenubox{
+
+//     @media only screen and (max-width) {
+        
+//     }
+ 
+//     display: none;
+//     opacity: 0;
+// }
+
+#resmenu{
+    display:none;
+}

@@ -1,0 +1,42 @@
+.search {
+  display: flex;
+  //   flex-direction: row;
+  grid-column: search-start / search-end;
+  width: 100%;
+  margin-right: auto;
+
+  &__input {
+    background-color: $color-primary-light;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    max-width: 80%;
+    font-family: $font-primary;
+    color: $color-white;
+    flex: 1;
+    &:focus {
+      outline: none;
+    }
+
+    @media only screen and (max-width: $bp-small){
+      max-width: 60%;
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 1.8rem;
+    height: 1.8rem;
+    align-self: center;
+    margin-left: -3rem;
+    fill: $color-gray-light;
+    transition: fill 0.2s;
+    @media only screen and (max-width: $bp-small){
+      
+      display: none;
+    }
+  }
+  &__input:focus + &__logo {
+    fill: $color-white;
+  }
+}

@@ -1,0 +1,127 @@
+.leftbar {
+  display: grid;
+  // grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-column: menu-start / menu-end;
+  grid-row: 2 / -1;
+  transition: all .5;
+  @media only screen and (max-width:$bp-small) {
+ 
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    // position: fixed;
+    // background-color: $color-primary;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    // min-width: 100vw;
+    // height: 0;
+}
+
+  
+
+  // @media only screen and (max-width: $bp-medium){
+  //   grid-column: menu-start / menu-end;
+  // }
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  border-bottom: 2px solid rgba($color-gray-light, 0.4);
+  padding-bottom: 2rem;
+  width: 70%;
+
+  @media only screen and (max-width:$bp-small){
+    
+    justify-self: center;
+    align-items: center;
+    
+    
+   
+  }
+
+  @media only screen and (max-width:$bp-smallest){
+    margin-top: 2rem;
+  }
+  
+  &__checked {
+    background-color: $color-orange !important;
+
+    &--logo {
+      fill: $color-white !important;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    color: $color-gray-light;
+    font-size: 1.2rem;
+    font-weight: 600;
+   
+    @media only screen and (max-width:$bp-small){
+    //  align-self: flex-start;
+    font-size: 2rem;
+    margin-bottom: 0;
+    @media only screen and (max-width:$bp-smallest){
+      font-size: 1.5rem;
+    }
+    
+    }
+  }
+
+  &__navi {
+  }
+
+  &__item {
+    padding: 1rem 1.5rem 1rem 0;
+  }
+
+  &__logo-box {
+    background-color: $color-primary-light;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    position: relative;
+    margin-right: 1.5rem;
+    transition: background-color .2s;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    &--logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $color-gray-light;
+      z-index: 20;
+     
+    }
+
+    &--name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $color-gray-light;
+      margin-top: 3px;
+    }
+  }
+
+   
+}
+.menu__link:hover .menu__logo-box{
+  background-color: $color-orange !important;
+}
+.menu__link:hover .menu__link--logo{
+ fill: $color-white !important;
+}
+
